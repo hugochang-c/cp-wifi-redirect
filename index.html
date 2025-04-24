@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>正在導向中...</title>
+    <script>
+        window.onload = function () {
+            const urls = [
+                "https://www.facebook.com/AuthenticYunlin100/?locale=zh_TW",
+                "https://www.17885.com.tw/",
+                "https://www.facebook.com/carefamily0308/?locale=zh_TW"
+            ];
+            const randomUrl = urls[Math.floor(Math.random() * urls.length)];
+            window.location.href = randomUrl;
+        };
+    </script>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            padding-top: 100px;
+            background-color: #f8f8f8;
+        }
+    </style>
+</head>
+<body>
+    <h2>正在導向您到雲林活動頁面…</h2>
+    <p>如果沒有自動跳轉，請<a href="#" id="manual">點此連結</a></p>
+    <script>
+        document.getElementById("manual").href = window.location.href;
+    </script>
+</body>
+</html>
